@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+
+}
+body {
+    overflow-x: hidden;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    background: red;
+}
+.mainBg {
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainBg .leftBg {
+    position: absolute;
+    width: 350px;
+    height: 150vh;
+    background: yellow;
+    transform: rotateZ(-25deg);
+    top: -150px;
+    left: -125px;
+}
+
+.headContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 35% 50% 30%;
+    align-items: center;
+    text-align: center;
+    grid-gap: 40px;
+}
+
+.headContent #headImg {
+    width: 400px;
+    height: 540px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.headContent #headImg img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(51, 51, 51, 0.8);
+}
+
+#headDesc {
+    text-align: left;
+    width: 100%;
+    margin-top: -50px;
+}
+
+#headDesc h2:first-child {
+    color: #ffb400;
+    position: relative;
+}
+
+#headDesc h2:first-child:before {
+    position: absolute;
+    width: 30px;
+    background: #ffb400;
+    content: "";
+    height: 2px;
+    left: -40px;
+    top: 30px;
+    color: #ffb400;
+}
+
+#headDesc h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#headDesc p {
+    color: #fff;
+    margin-top: 15px;
+    line-height: 2em;
+}
+
+#nav {
+    height: 100vh;
+    color: #fff;
+    
+}
+#nav ul {
+    position: relative;
+    height: 100vh;
+    background: yellow;
+    color: #fff;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 40% 15% 15% 15% 15%;
+    list-style: none;
+}
+#nav ul li {
+    top: 100px;
+    z-index: 100;
+    background: green;
+    color: #fff;
+}
+#nav ul li a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+#headDesc .btn button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 30px;
+}
+
+#headDesc .btn button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+#headDesc .btn button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ffb400;
+    border-radius: 1.625rem;
+}
+
+#headDesc .btn button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+#headDesc .btn button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+#headDesc .btn button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+#headDesc .btn button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#headDesc .btn button:hover .circle {
+    width: 100%;
+}
+
+#headDesc .btn button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+#headDesc .btn button:hover .button-text {
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+
+    .mainBg .leftBg {
+        display: none;
+    }
+
+    .headContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    #headDesc {
+        text-align: center;
+    }
+    #headDesc p {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #headDesc h2:first-child:before {
+        position: absolute;
+        left: 120px;
+        top: 30px;
+        color: #ffb400;
+    }
+
+    .headContent #headImg {
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        overflow: visible;
+    }
+
+    .headContent #headImg img {
+        width: 300px;
+        object-fit: cover;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: none;
+        border:solid 5px black;
+    }
+    #nav {
+        background: red;
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my cv website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberAli1989/Portfolio.git"
+  },
+  "keywords": [
+    "cv",
+    "portfolio"
+  ],
+  "author": "Ali Naserian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CyberAli1989/Portfolio/issues"
+  },
+  "homepage": "https://github.com/CyberAli1989/Portfolio#readme"
+}

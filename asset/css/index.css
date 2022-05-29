@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 
 }
+
 body {
-    overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    background: #111111;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -19,27 +25,22 @@ header {
     width: 100%;
     height: 100vh;
 }
-.container{
+
+.container {
     max-width: 90%;
     margin: 0 auto;
     background: red;
 }
-.mainBg {
-    width: 100%;
-    height: 100vh;
-    background: #111111;
-    overflow: hidden;
-    position: relative;
-}
 
-.mainBg .leftBg {
-    position: absolute;
-    width: 350px;
+.leftBg {
+    position: fixed;
+    width: 400px;
     height: 150vh;
-    background: yellow;
-    transform: rotateZ(-25deg);
-    top: -150px;
-    left: -125px;
+    background: #ffb400;
+    transform: rotateZ(-20deg);
+    top: -200px;
+    left: -150px;
+    z-index: -1;
 }
 
 .headContent {
@@ -59,6 +60,7 @@ header {
 .headContent #headImg {
     width: 400px;
     height: 540px;
+    background: #19d6d6;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -74,7 +76,7 @@ header {
     width: 100%;
     margin-top: -50px;
     display: grid;
-    grid-template-rows: 80px 100px ;
+    grid-template-rows: 80px 100px;
 }
 
 #headDesc h2:first-child {
@@ -113,8 +115,9 @@ header {
     position: fixed;
     top: -80px;
     right: 10px;
-    
+
 }
+
 #nav ul {
     justify-content: end;
     height: 100vh;
@@ -127,6 +130,7 @@ header {
     width: 150px;
     text-align: center;
 }
+
 #nav ul li {
     top: 100px;
     z-index: 100;
@@ -135,25 +139,30 @@ header {
     width: 50px;
     height: 50px;
     background: #2b2a2a;
-    border-radius:50%;
+    border-radius: 50%;
     line-height: 55px;
     position: relative;
 }
+
 #nav ul li a {
     color: #fff;
     border-radius: 50%;
 }
+
 #nav ul li a .bx {
     font-size: 1.3em;
 }
+
 #nav ul li.active {
     background: #ffb400;
     color: #fff;
 }
+
 #nav ul li:hover {
     background: #ffb400;
     cursor: pointer;
 }
+
 #nav ul li:nth-child(2):before {
     content: "Home";
     letter-spacing: 5px;
@@ -162,7 +171,7 @@ header {
     right: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0px 0 100px;
+    border-radius: 100px 0px 0 100px;
     width: 0px;
     visibility: hidden;
     height: 50px;
@@ -170,12 +179,14 @@ header {
     opacity: 0;
     transition: 200ms ease-in;
 }
-#nav ul li:nth-child(2):hover:before{
+
+#nav ul li:nth-child(2):hover:before {
     visibility: visible;
     width: 150px;
     left: -120px;
     opacity: 1;
 }
+
 #nav ul li:nth-child(3):before {
     content: "About";
     letter-spacing: 5px;
@@ -185,7 +196,7 @@ header {
     top: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
     width: 0px;
     visibility: hidden;
     height: 50px;
@@ -193,12 +204,14 @@ header {
     opacity: 0;
     transition: 200ms ease-in;
 }
-#nav ul li:nth-child(3):hover:before{
+
+#nav ul li:nth-child(3):hover:before {
     visibility: visible;
     left: -120px;
     width: 150px;
     opacity: 1;
 }
+
 #nav ul li:nth-child(4):before {
     content: "Portfolio";
     position: absolute;
@@ -208,7 +221,7 @@ header {
     top: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
     width: 0px;
     visibility: hidden;
     height: 50px;
@@ -216,12 +229,14 @@ header {
     opacity: 0;
     transition: 200ms ease-in;
 }
-#nav ul li:nth-child(4):hover:before{
+
+#nav ul li:nth-child(4):hover:before {
     visibility: visible;
     left: -130px;
     opacity: 1;
     width: 160px;
 }
+
 #nav ul li:nth-child(5):before {
     content: "Contact";
     position: absolute;
@@ -231,7 +246,7 @@ header {
     top: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
     width: 0px;
     visibility: hidden;
     height: 50px;
@@ -239,12 +254,14 @@ header {
     opacity: 0;
     transition: 200ms ease-in;
 }
-#nav ul li:nth-child(5):hover:before{
+
+#nav ul li:nth-child(5):hover:before {
     visibility: visible;
     left: -120px;
     width: 150px;
     opacity: 1;
 }
+
 #nav ul li:nth-child(6):before {
     content: "Blog";
     position: absolute;
@@ -253,15 +270,16 @@ header {
     top: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0 0 100px;
+    border-radius: 100px 0 0 100px;
     width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
     opacity: 0;
-    transition: 200ms ;
+    transition: 200ms;
 }
-#nav ul li:nth-child(6):hover:before{
+
+#nav ul li:nth-child(6):hover:before {
     visibility: visible;
     left: -80px;
     opacity: 1;
@@ -376,13 +394,16 @@ header {
         align-items: center;
         align-content: center;
     }
+
     #headDesc {
         text-align: center;
     }
+
     #headDesc p {
         width: 60%;
         margin: 0 auto;
     }
+
     #headDesc h2:first-child:before {
         position: absolute;
         left: 120px;
@@ -404,8 +425,9 @@ header {
         height: 300px;
         border-radius: 50%;
         box-shadow: none;
-        border:solid 5px black;
+        border: solid 5px black;
     }
+
     #nav {
         background: red;
         width: 100%;

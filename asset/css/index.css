@@ -8,7 +8,7 @@ a {
 
 }
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
 }
@@ -157,10 +157,11 @@ header {
     letter-spacing: 5px;
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
     background: #ffb400;
-    border-radius:100px 0 0 100px;
-    width: 150px;
+    border-radius:100px 0px 0 100px;
+    width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
@@ -169,6 +170,7 @@ header {
 }
 #nav ul li:nth-child(2):hover:before{
     visibility: visible;
+    width: 150px;
     left: -120px;
     opacity: 1;
 }
@@ -176,11 +178,13 @@ header {
     content: "About";
     letter-spacing: 5px;
     position: absolute;
+    right: 0;
+
     top: 0;
     left: 0;
     background: #ffb400;
     border-radius:100px 0 0 100px;
-    width: 150px;
+    width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
@@ -190,17 +194,20 @@ header {
 #nav ul li:nth-child(3):hover:before{
     visibility: visible;
     left: -120px;
+    width: 150px;
     opacity: 1;
 }
 #nav ul li:nth-child(4):before {
     content: "Portfolio";
     position: absolute;
     letter-spacing: 5px;
+    right: 0;
+
     top: 0;
     left: 0;
     background: #ffb400;
     border-radius:100px 0 0 100px;
-    width: 150px;
+    width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
@@ -209,18 +216,21 @@ header {
 }
 #nav ul li:nth-child(4):hover:before{
     visibility: visible;
-    left: -120px;
+    left: -130px;
     opacity: 1;
+    width: 160px;
 }
 #nav ul li:nth-child(5):before {
     content: "Contact";
     position: absolute;
     letter-spacing: 5px;
+    right: 0;
+
     top: 0;
     left: 0;
     background: #ffb400;
     border-radius:100px 0 0 100px;
-    width: 150px;
+    width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
@@ -230,27 +240,30 @@ header {
 #nav ul li:nth-child(5):hover:before{
     visibility: visible;
     left: -120px;
+    width: 150px;
     opacity: 1;
 }
 #nav ul li:nth-child(6):before {
     content: "Blog";
     position: absolute;
     letter-spacing: 5px;
+    right: 0;
     top: 0;
     left: 0;
     background: #ffb400;
     border-radius:100px 0 0 100px;
-    width: 100px;
+    width: 0px;
     visibility: hidden;
     height: 50px;
     z-index: -1;
     opacity: 0;
-    transition: 200ms ease-in;
+    transition: 200ms ;
 }
 #nav ul li:nth-child(6):hover:before{
     visibility: visible;
     left: -80px;
     opacity: 1;
+    width: 110px;
 }
 
 

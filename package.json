@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/CyberAli1989/Portfolio/issues"
   },
-  "homepage": "https://github.com/CyberAli1989/Portfolio#readme"
+  "homepage": "https://github.com/CyberAli1989/Portfolio#readme",
+  "dependencies": {
+    "boxicons": "^2.1.2"
+  }
 }

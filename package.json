@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CyberAli1989/Portfolio#readme",
   "dependencies": {
-    "boxicons": "^2.1.2"
+    "boxicons": "^2.1.2",
+    "typer-dot-js": "^0.1.0"
   }
 }

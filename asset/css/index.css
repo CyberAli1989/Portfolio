@@ -226,7 +226,10 @@ header {
     background: #2b2a2a;
     border-radius: 50%;
 }
-
+#nav ul li .bxs-sun {
+    display: none;
+    color: #dbe408;
+}
 
 #nav ul li .bx {
     font-size: 1.3em;

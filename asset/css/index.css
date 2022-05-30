@@ -56,7 +56,7 @@ header {
 .headContent #headImg {
     width: 500px;
     height: 650px;
-    background: #19d6d6;
+    background: #d4fbf6;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: -15px -25px 20px rgba(51, 51, 51, 0.4);
@@ -81,7 +81,7 @@ header {
     height: 70px;
  }
 #headDesc .title h2 {
-    color: #ffb400;
+    color: #ffb400 ;
 }
 
 #headDesc .title h2 {
@@ -366,9 +366,9 @@ header {
 
 
 
-/* beak at 1000px */
+/* beak at 1100px */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .leftBg {
         display: none;
@@ -420,28 +420,31 @@ header {
     }
     
     #nav {
+        display: flex;
         color: #fff;
-        position: fixed ;
         margin: 0 auto;
         /* background: #000; */
         left: 0;
         bottom: 0;
-
         right: 0;
         width: 100%;
-        height: 20px;
+        height: fit-content;
         /* overflow: hidden; */
+        background: #000;
     }
     
     #nav ul {
+        position: fixed ;
+        bottom: 0;
         display: flex;
         align-items: flex-end;
+        justify-content: center;
         color: #fff;
-        /* display: grid;
-        grid-template-columns: repeat(7,1fr); */
         list-style: none;
         text-align: center;
         width: 100%;
+        background: #2b2a2a;
+        height: fit-content;
     }
     
     #nav ul li {
@@ -456,7 +459,7 @@ header {
         /* margin-top: 20px; */
         width: 50px;
         height: 50px;
-        background: #2b2a2a;
+        background: #444444;
         border-radius: 50%;
     }
     

@@ -1,7 +1,7 @@
 $(function() {
-    let slide = false
+    // let slide = false
     let head = false
-    let abotu = false
+    let about = false
     $("#home").click(function(e) {
         if (head == true) {
             $('header').slideToggle();

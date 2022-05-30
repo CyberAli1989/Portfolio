@@ -19,6 +19,7 @@ $(function () {
             $('#nav ul li:before').css('background', '#72b626');
             styleElem.innerHTML = "#nav ul li:before {background: #72b626 !important;}"
             $('#nav ul').css('background', '#ffffff')
+            $('#particles-js').css('background', '#fff')
             $('#nav ul li').hover(function () {
                 // over
                 this.style.background = '#72b626';
@@ -41,9 +42,11 @@ $(function () {
             $('#headDesc .btn button.learn-more .button-text').css('border', '1px solid #ffb400');
             styleElem.innerHTML = "#nav ul li:before {background: #ffb400 !important;}";
             $('#headDesc .title h2').css('color', '#ffb400');
-            $('#nav ul').css('background', '#2b2a2a')
+            $('#nav ul').css('background', '#111111')
             $('#nav ul li').css('background', '#444444')
             $('#headDesc .btn button.learn-more .circle').css('background', '#ffb400');
+            $('#particles-js').css('background', '#111111')
+
             $('#nav ul li').hover(function () {
                 // over
                 this.style.background = '#ffb400';

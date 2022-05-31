@@ -13,6 +13,7 @@ body {
     width: 100vw;
     background: #111111;
     overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -35,6 +36,7 @@ header {
     top: -200px;
     left: -150px;
     z-index: -1;
+    transition: 300ms;
 }
 /* background config END */
 
@@ -360,10 +362,184 @@ header {
     width: 110px;
 }
 
+/* About Me Section */
+
+
+#About {
+    width: 100%;
+    /* background: red; */
+    height: 100vh;
+    z-index: 1;
+}
+#About h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size:3em;
+    width: 500px;
+    color: #ffff;
+    margin-top: 40px;
+    height: 20px;
+    position: relative;
+    height: 100px;
+}
+#About h1:before {
+    content: 'About Me';
+    color: #444;
+    letter-spacing: 5px;
+    position: absolute;
+    z-index: -1;
+    font-size: 1.5em;
+    left: 25px;
+    top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#About h1 span {
+    color: #ffb400;
+}
+#About .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    flex-wrap: wrap;
+    color: #fff
+}
+
+#About .container .info {
+    width: 500px;
+    margin: 0 auto;
+}
+#About .container .info h2 {
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+#About .container ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 15px;
+}
+#About .container ul li{
+    line-height: 2.5em;
+    font-size: 14px;
+
+}
+#About .container ul li span {
+    color: #5e5e5e;
+    font-size: 14px;
+}
 
 
 
+#About .container .boxs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
 
+}
+#About .container .boxs .box {
+    width: 200px;
+    height: 130px;
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#About .container .boxs .box .counter {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+}
+#About .container .boxs .box .counter h2{
+    font-size: 2em;
+    font-weight: 600;
+    color: #ffb400;
+    align-self: flex-start;
+}
+#About .container .boxs .box .counter h2::after{
+    content: '+';
+    font-size: .7em;
+    position: absolute;
+    margin-left: 2px;
+}
+#About .container .boxs .box .counter p {
+    font-size: 1em;
+    margin-top: 12px;
+    position: relative;
+    width: 100px;
+}
+#About .container .boxs .box .counter p::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height:2px;
+    left: -30px;
+    top: 10px;
+    /* right: 0; */
+    /* bottom: 0; */
+    background:#fff;
+}
+/* From uiverse.io by @adamgiebl */
+.btns .cssbuttons-io-button {
+    background: #ffb400;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #ffb400;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+   }
+   
+   .btns .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #ffb400;
+    right: 0.3em;
+    transition: all 0.3s;
+   }
+   
+   .btns .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+   }
+   
+   .btns .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+   }
+   
+   .btns .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+   }
+   
+   .btns .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+   }
+   
 
 
 /* beak at 1100px */
@@ -371,7 +547,7 @@ header {
 @media (max-width: 1100px) {
 
     .leftBg {
-        display: none;
+        display: none !important;
     }
     .headContent {
         height: 100vh;

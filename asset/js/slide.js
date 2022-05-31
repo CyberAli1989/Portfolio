@@ -4,10 +4,11 @@ $(function() {
     let about = false
     $("#home").click(function(e) {
         if (head == true) {
-            $('header').slideToggle();
+            $('header').slideDown();
             
         }
         $('body').css('overflow', 'hidden');
+        $('.leftBg').css('display', 'block');
 
     })
     $("#about").click(function (e) { 
@@ -16,9 +17,9 @@ $(function() {
         head = true
         if (about == true) {
             $('#About').slideToggle();
-
         }
         $('body').css('overflow', 'visible');
+        $('.leftBg').css('display', 'none');
         $('#Contact').css('display', 'none');
     });
     $("#contact").click(function (e) { 

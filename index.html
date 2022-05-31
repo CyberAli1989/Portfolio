@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="asset/css/index.css">
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="asset/css/particle.css">
+    <link rel="stylesheet" href="asset/css/modal.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="asset/js/slide.js"></script>
     <script src="asset/js/chngeTheme.js"></script>
     <script src="asset/js/particle.js"></script>
+    <script src="asset/js/counter.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 
 </head>
@@ -38,20 +40,39 @@
                         corporis dolorum nobis doloremque accusantium? Nesciunt corporis deleniti quaerat non.
                         Architecto
                         commodi soluta consequatur magnam nemo rerum.</p>
-                    <div class="btn">
-                        <button class="learn-more">
-                            <span class="circle" aria-hidden="true">
-                                <span class="icon arrow"></span>
-                            </span>
-                            <span class="button-text">Learn More</span>
-                        </button>
+
+
+                    <div class="btns">
+                        <a href="#openModal">
+
+                        <button class="cssbuttons-io-button"> Get started
+                            <div class="icon">
+                              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                            </div>
+
+                          
+                          </button>
+                          <div id="openModal" class="modalbg">
+                            <div class="dialog">
+                                <a href="#close" title="Close" class="close">X</a>
+                                <h2>Holy Crap!!!</h2>
+                                <p>You freakin' did it!</p>
+                                <p>You opened up the freakin' modal window! Now close it, ya dingus.</p>
+                                <p class="fineprint">Based on the article "Creating a modal window with HTML5 & CSS3" at <a
+                                        href="webdesignerdepot.com">Webdesigner Depot</a></p>
+                                <p class="fineprint">p.s. Sorry for calling you a dingus earlier.</p>
+                            </div>
+                        </div>
+                        </a>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </header>
-    <div id="nav">
+    
+    <nav id="nav">
         <ul>
             <li id="chngeTheme">
                 <i class='bx bxs-moon'></i>
@@ -63,21 +84,93 @@
             <li><i class='bx bxs-envelope'></i></li>
             <li><i class='bx bxs-chat'></i></li>
         </ul>
-    </div>
-    <section style="width: 100%;" id="About">
-        <p style="color:red; width: min-content;">`
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک `است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط `فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
-        <p style="color:red; width: min-content;">`
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک `است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط `فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
+    </nav>
+
+    
+    <section id="About">
+        <h1>About <span>Me</span></h1>
+        <div class="container">
+            <div class="info">
+                <h2>Personal Info</h2>
+                <ul>
+                    <li>
+                        <p><span>First name: </span>Ali</p>
+                    </li>
+                    <li>
+                        <p><span>Last name: </span>Naserian</p>
+
+                    </li>
+                    <li>
+                        <p><span>Age :</span>23</p>
+
+                    </li>
+                    <li>
+                        <p><span>Nationality </span>Iran</p>
+
+                    </li>
+                    <li>
+                        <p><span>Freelance: </span>Available</p>
+
+                    </li>
+                    <li>
+                        <p><span>Address: </span>Iran</p>
+
+                    </li>
+                    <li>
+                        <p><span>phone: </span>+989353722350</p>
+
+                    </li>
+                    <li>
+                        <p><span>Email: </span>naserianali@gmail.com</p>
+
+                    </li>
+                    <li>
+                        <p><span>Instagram </span>nasserianali</p>
+
+                    </li>
+                    <li>
+                        <p><span>languages:  </span>Persian , English</p>
+
+                    </li>
+                </ul>
+                    <div class="btns">
+                        <button class="cssbuttons-io-button"> Get started
+                            <div class="icon">
+                              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                            </div>
+                          </button>
+                    </div>
+                </div>
+            <div class="boxs">
+                <div class="box">
+                    <div class="counter">
+                        <h2  id="first"></h2>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="counter" >
+                        <h2 id="second"></h2>
+                        <p>completed projects</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="counter" >
+                        <h2 id="third"></h2>
+                        <p>Happy customers</p>
+                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="counter" >
+                        <h2 id="forth"></h2>
+                        <p>awards won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="Contact">
-        <h1>contact</h1>
-        <p style="color:red; width: min-content;">`
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک `است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط `فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
-    </section>
+
 </body>
 
 <script src="node_modules/typer-dot-js/typer.js"></script>

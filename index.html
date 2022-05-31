@@ -10,16 +10,31 @@
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="asset/css/particle.css">
     <link rel="stylesheet" href="asset/css/modal.css">
+    <link rel="stylesheet" href="asset/css/skills.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="asset/js/slide.js"></script>
     <script src="asset/js/chngeTheme.js"></script>
     <script src="asset/js/particle.js"></script>
     <script src="asset/js/counter.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="asset/js/skill.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </head>
 
 <body>
+    <nav id="nav">
+        <ul>
+            <li id="chngeTheme">
+                <i class='bx bxs-moon'></i>
+                <i class='bx bxs-sun'></i>
+            </li>
+            <li id="home" class="active"><i class='bx bxs-home'></i></li>
+            <li id="about"><i class='bx bx-user'></i></li>
+            <li id="contact"><i class='bx bxs-briefcase-alt-2'></i></li>
+            <li><i class='bx bxs-envelope'></i></li>
+            <li><i class='bx bxs-chat'></i></li>
+        </ul>
+    </nav>
     <div id="particles-js"></div>
     <div class="leftBg"></div>
     <header id="Home">
@@ -45,24 +60,29 @@
                     <div class="btns">
                         <a href="#openModal">
 
-                        <button class="cssbuttons-io-button"> Get started
-                            <div class="icon">
-                              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-                            </div>
+                            <button class="cssbuttons-io-button"> About Me
+                                <div class="icon">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
 
-                          
-                          </button>
-                          <div id="openModal" class="modalbg">
-                            <div class="dialog">
-                                <a href="#close" title="Close" class="close">X</a>
-                                <h2>Holy Crap!!!</h2>
-                                <p>You freakin' did it!</p>
-                                <p>You opened up the freakin' modal window! Now close it, ya dingus.</p>
-                                <p class="fineprint">Based on the article "Creating a modal window with HTML5 & CSS3" at <a
-                                        href="webdesignerdepot.com">Webdesigner Depot</a></p>
-                                <p class="fineprint">p.s. Sorry for calling you a dingus earlier.</p>
+
+                            </button>
+                            <div id="openModal" class="modalbg">
+                                <div class="dialog">
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h2>Holy Crap!!!</h2>
+                                    <p>You freakin' did it!</p>
+                                    <p>You opened up the freakin' modal window! Now close it, ya dingus.</p>
+                                    <p class="fineprint">Based on the article "Creating a modal window with HTML5 &
+                                        CSS3" at <a href="webdesignerdepot.com">Webdesigner Depot</a></p>
+                                    <p class="fineprint">p.s. Sorry for calling you a dingus earlier.</p>
+                                </div>
                             </div>
-                        </div>
                         </a>
 
                     </div>
@@ -71,22 +91,10 @@
             </div>
         </div>
     </header>
-    
-    <nav id="nav">
-        <ul>
-            <li id="chngeTheme">
-                <i class='bx bxs-moon'></i>
-                <i class='bx bxs-sun'></i>
-            </li>
-            <li id="home" class="active"><i class='bx bxs-home'></i></li>
-            <li id="about"><i class='bx bx-user'></i></li>
-            <li id="contact"><i class='bx bxs-briefcase-alt-2'></i></li>
-            <li><i class='bx bxs-envelope'></i></li>
-            <li><i class='bx bxs-chat'></i></li>
-        </ul>
-    </nav>
 
     
+
+
     <section id="About">
         <h1>About <span>Me</span></h1>
         <div class="container">
@@ -129,48 +137,139 @@
 
                     </li>
                     <li>
-                        <p><span>languages:  </span>Persian , English</p>
+                        <p><span>languages: </span>Persian , English</p>
 
                     </li>
                 </ul>
-                    <div class="btns">
-                        <button class="cssbuttons-io-button"> Get started
-                            <div class="icon">
-                              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-                            </div>
-                          </button>
-                    </div>
+                <div class="btns">
+                    <button class="cssbuttons-io-button"> Download CV
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
                 </div>
+            </div>
             <div class="boxs">
                 <div class="box">
                     <div class="counter">
-                        <h2  id="first"></h2>
+                        <h2 id="first"></h2>
                         <p>Years of experience</p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="counter" >
+                    <div class="counter">
                         <h2 id="second"></h2>
                         <p>completed projects</p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="counter" >
+                    <div class="counter">
                         <h2 id="third"></h2>
                         <p>Happy customers</p>
-                        
+
                     </div>
                 </div>
                 <div class="box">
-                    <div class="counter" >
+                    <div class="counter">
                         <h2 id="forth"></h2>
                         <p>awards won</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="skills">
+            <div class="skill-wrapper">
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+                <!-- second row -->
+            
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+            
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+            
+                <!-- <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div>
+            
+                <div class="skill-progress">
+                    <div class="circle">
+                        <div class="mask"></div>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="inset">
+                        <div class="numbers"></div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
     </section>
 
+    <section id="Contact"></section>
 </body>
 
 <script src="node_modules/typer-dot-js/typer.js"></script>

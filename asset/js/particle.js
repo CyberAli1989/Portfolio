@@ -23,7 +23,7 @@ $(function () {
                 "image": {
                     "src": "img/github.svg",
                     "width": 100,
-                    "height": 100
+                    "height":100
                 }
             },
             "opacity": {
@@ -72,7 +72,7 @@ $(function () {
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "grab"
                 },
                 "onclick": {
@@ -103,7 +103,7 @@ $(function () {
                     "particles_nb": 4
                 },
                 "remove": {
-                    "particles_nb": 2
+                    "particles_nb": 1
                 }
             }
         },

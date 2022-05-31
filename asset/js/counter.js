@@ -36,9 +36,10 @@ $(function () {
                 d++
             }
 
-            if (counter == 15) {
+            if (counter == 11) {
                 clearInterval(i);
             }
-        }, 100);
+        }, 50);
     })
+
 });

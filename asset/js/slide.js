@@ -3,9 +3,9 @@ $(function() {
     let head = false
     let about = false
     $("#home").click(function(e) {
+        e.preventDefault()
         if (head == true) {
             $('header').slideDown();
-            
         }
         $('body').css('overflow', 'hidden');
         $('.leftBg').css('display', 'block');
@@ -30,6 +30,7 @@ $(function() {
         head = true
         $('body').css('overflow', 'hidden');
         $('#Contact').css('display', 'initial');
+        $('.leftBg').css('display', 'none');
 
     });
     

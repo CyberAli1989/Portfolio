@@ -6,9 +6,11 @@ $(function() {
         e.preventDefault()
         if (head == true) {
             $('header').slideDown();
+            $('body , html').animate({scrollTop:0}, 'slow');
         }
         $('body').css('overflow', 'hidden');
         $('.leftBg').css('display', 'block');
+
 
     })
     $("#about").click(function (e) { 

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 a {
@@ -52,14 +52,17 @@ header {
 .headContent {
     height: 100vh;
     display: flex;
-    display: grid;
-    grid-template-columns: 40% 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    /* background: red; */
+    overflow: hidden;
 }
 
 .headContent #headImg {
-    width: 500px;
-    height: 650px;
+    width: 450px;
+    height: 600px;
     background: #d4fbf6;
     border-radius: 20px;
     overflow: hidden;
@@ -72,14 +75,13 @@ header {
 }
 
 #headDesc {
-    /* align-items:center; */
-    margin: 0 auto;
-    text-align: center;
-    width: 60%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: 550px;
+    height: 100%;
 }
 
 #headDesc .title {
@@ -199,44 +201,43 @@ header {
 }
 
 #nav {
-    color: #fff;
     position: fixed;
+    right: 10px;
     top: 0;
-    right: 0;
     bottom: 0;
-    margin: 0 15px;
+    z-index: 100;
 }
 
 #nav ul {
-    height: 100vh;
-    color: #fff;
-    text-align: left;
-    align-items: start;
-    display: grid;
-    grid-template-rows: 30% 8% 8% 8% 8% 8%;
+    height: 100%;
     list-style: none;
-    text-align: center;
+    display: grid;
+    grid-template-rows: 150px 70px 70px 70px 70px 70px;
 }
 
 #nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     line-height: 50px;
-    position: relative;
-    margin: 20px 0;
-    /* top: 50px; */
-    z-index: 100;
     color: #fff;
-    /* margin-top: 20px; */
     width: 50px;
     height: 50px;
     background: #2b2a2a;
     border-radius: 50%;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+}
+
+#nav ul li:first-child {
+    background: #000;
+}
+
+#nav ul li .bxs-moon {
+    line-height: 50px;
 }
 
 #nav ul li .bxs-sun {
     display: none;
+    line-height: 50px;
     color: #dbe408;
 }
 
@@ -373,8 +374,6 @@ header {
 
 
 #About {
-    width: 100%;
-    /* background: red; */
     min-height: 100vh;
     z-index: 1;
 }
@@ -383,22 +382,22 @@ header {
     margin: 0 auto;
     text-align: center;
     font-size: 3em;
-    width: 500px;
     color: #ffff;
-    margin-top: 40px;
     height: 20px;
     position: relative;
     height: 100px;
 }
 
 #About h1:before {
+    text-align: center;
     content: 'About Me';
     color: #444;
     letter-spacing: 5px;
     position: absolute;
     z-index: -1;
     font-size: 1.5em;
-    left: 25px;
+    left: 0;
+    right: 0;
     top: -10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
@@ -409,18 +408,15 @@ header {
 }
 
 #About .container {
+    max-width: fit-content;
     display: flex;
     flex-direction: row;
-    max-width: 60%;
     flex-wrap: wrap;
     color: #fff;
-    height: 300px;
-    margin-bottom: 100px;
 }
 
 #About .container .info {
-    width: 500px;
-    margin: 0 auto;
+    margin: 15px 40px;
 }
 
 #About .container .info h2 {
@@ -433,26 +429,26 @@ header {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 15px;
 }
 
 #About .container ul li {
     line-height: 2.5em;
     font-size: 14px;
-
 }
 
 #About .container ul li span {
     color: #5e5e5e;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
 
 #About .container .boxs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 220px);
     margin: 0 auto;
+    height: fit-content;
+    /* background: #000; */
 
 }
 
@@ -462,26 +458,18 @@ header {
     border: 1px solid #444;
     padding: 10px;
     margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 8px;
 }
 
 #About .container .boxs .box .counter {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
     width: 100%;
     height: 100%;
-    align-content: flex-start;
 }
 
 #About .container .boxs .box .counter h2 {
     font-size: 2em;
     font-weight: 600;
     color: #ffb400;
-    align-self: flex-start;
 }
 
 #About .container .boxs .box .counter h2::after {
@@ -492,26 +480,19 @@ header {
 }
 
 #About .container .boxs .box .counter p {
+    text-align: center;
+    width: 50% !important;
+    margin: 0 auto;
     font-size: 1em;
     margin-top: 12px;
     position: relative;
     width: 100px;
 }
 
-#About .container .boxs .box .counter p::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 2px;
-    left: -30px;
-    top: 10px;
-    /* right: 0; */
-    /* bottom: 0; */
-    background: #fff;
-}
+
 
 /* From uiverse.io by @adamgiebl */
+
 .btns .cssbuttons-io-button {
     background: #ffb400;
     color: white;
@@ -565,44 +546,110 @@ header {
     transform: scale(0.95);
 }
 
+/* Educations */
 
-
-
-@media (max-width:1400px){
+.containerEd {
+    max-width: 80%;
+    margin: 0 auto;
+}
+#experience{
+    height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#edu{
+    font-size: 1.2em;
+    color: #363636;
+    margin: 15px 30px;
+    /* color: #fff; */
+}
+.edContent{
+    width: 100%;
+    height: fit-content;
+}
+.edContent .icons {
+    width: 35px;
+    float: left;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #ffb400;
+    position: relative;
+    color: #fff;
+    margin: 10px;
+}
+.edContent .icons::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 1px;
+    border-left: 1px solid #5e5e5e;
+    top: 35px;
+    text-align: center;
+    /* right: 0; */
+    left: 16px;
+}
+.edContent .content {
+    float: right;
+    width: 480px;
+}
+.edContent .content .date {
+    font-size: 8px;
+    background-color: #212121;
+    color: #fff;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 20px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+.edContent .content .title {
+    font-size: 14px;
+    font-weight: 200;
+    margin: 8px 0;
+}
+.edContent .content .title span{
+    color: #bebebe;
+}
+.edContent .content .text{
+    font-size: 12px;
+    color: #bebebe;
+}
+@media (max-width:1400px) {
     #About .container .boxs {
         width: 600px;
         /* background: #000; */
-  
-      }
+
+    }
 }
 
 /* beak at 1100px */
 
 @media (max-width: 1100px) {
- 
-    nav {
-        z-index: 100;
-        position: fixed;
-        bottom: 100px;
-        right: 0;
-        left: 0;
-    }
+
+
 
     .leftBg {
         display: none !important;
     }
 
     .headContent {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: fit-content;
+        justify-content: center;
+        /* background: #7220ba; */
     }
 
     .headContent #headImg {
         width: 250px;
         height: 250px;
-        margin: 0 auto;
+        margin: 15px auto;
         box-shadow: initial;
         border: 4px solid #ccc;
         border-radius: 50%;
@@ -612,6 +659,14 @@ header {
         border-radius: 50%;
     }
 
+    header {
+        height: 100vh;
+        overflow: hidden;
+        /* background: pink; */
+        display: flex;
+        align-items: center;
+    }
+
     #headDesc {
         margin: 0 auto;
         text-align: center;
@@ -619,49 +674,44 @@ header {
         width: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
-    #headDesc .title {
-        height: 60px;
-    }
+    /* #headDesc .title {
+        margin: 10px;
+    } */
 
     #headDesc .title h2 {
-        font-size: 2.5em;
+        /* font-size: 2.5em; */
+        margin-top: 15px;
     }
 
     #headDesc p {
         line-height: 1.5em;
-        height: fit-content !important;
         padding: 15px 0;
         line-height: 2em;
         text-align: center;
     }
 
-    #headDesc .btn {
-        text-align: center;
+    #headDesc .btns {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     #nav {
-        display: flex;
-        color: #fff;
-        margin: 0 auto;
-        /* background: #000; */
+        position: fixed;
         left: 0;
-        bottom: 0;
         right: 0;
-        width: 100%;
-        height: fit-content;
-        /* overflow: hidden; */
-        background: #000;
     }
 
     #nav ul {
         position: fixed;
         bottom: 0;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
         color: #fff;
         list-style: none;
         text-align: center;
@@ -671,11 +721,7 @@ header {
     }
 
     #nav ul li {
-        justify-content: center;
-        align-items: center;
-        line-height: 50px;
-        position: relative;
-        margin: 20px 10px;
+        margin: 20px auto;
         /* top: 50px; */
         z-index: 100;
         color: #fff;
@@ -697,38 +743,123 @@ header {
     }
 
     /* About Me Responsive */
-    #About .container .boxs {
-        width: 200px;
+
+
+
+    #About h1 {
+        margin: 5px auto;
+        text-align: center;
+        font-size: 2.5em;
+        color: #ffff;
+        height: 20px;
         position: relative;
-        left: -70px;
-        /* background: #000; */
-  
-      }
-      #About .container .boxs .box {
-          width: 150px;
-          height: 120px;
-          margin: 10px;
-          
-      }
-      #About .container .info {
-        width: 100%;
-        /* background: #000; */
-        margin: 0 auto;
+        height: 100px;
     }
+
+    #About h1:before {
+        font-size: 1.25em;
+        top: -3px;
+    }
+
     #About .container {
-        /* max-width: 80% ; */
-        margin: 0 auto;
-        height: 400px;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    #About .container ul li{
-        /* padding: 5px; */
-        margin:0 8px ;
+
+    #About .container .info {
+        margin: 10px;
     }
     #About .container ul li span {
-        color: #5e5e5e;
-        font-size: 14px;
         display: block;
+        text-align-last: left;
+    }
+    #About .container .info h2 {
+        margin-bottom: 20px;
+        color: #363636;
+        font-size: 1.7em;
+    }
+
+    #About .container ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #About .container ul li {
+        line-height: 2.3em;
+        text-align: center;
+
     }
 
 
+    #About .container .boxs {
+        grid-template-columns: 180px 180px;
+        /* background: #000; */
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #About .container .boxs .box {
+        width: 160px;
+        height: 120px;
+        margin: 5px auto;
+    }
+    #About .btns button{
+        font-size: 1em ;
+    }
+
+
+/* Educations */
+
+#experience{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+}
+
+.edContent .icons {
+    width: 35px;
+    /* float: left; */
+    clear: both;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #ffb400;
+    position: relative;
+    color: #fff;
+    margin: 10px auto;
+    text-align: center;
+}
+.edContent .icons::before {
+    display: none;
+}
+.edContent .content {
+    width: 250px;
+    margin: 10px 0;
+}
+.edContent .content .date {
+    font-size: 8px;
+    background-color: #212121;
+    color: #fff;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 20px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+.edContent .content .title {
+    font-size: 14px;
+    font-weight: 200;
+    margin: 8px 0;
+}
+.edContent .content .title span{
+    color: #bebebe;
+}
+.edContent .content .text{
+    font-size: 12px;
+    color: #bebebe;
+}
 }

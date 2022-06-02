@@ -15,3 +15,16 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
 }
+@media (max-width: 768px) {
+    canvas{
+        width: 300px;
+        margin: 0 auto;
+    }
+    #particles-js {
+        right: 0;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+    
+}

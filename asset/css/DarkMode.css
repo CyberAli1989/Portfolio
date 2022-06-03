@@ -1,0 +1,68 @@
+.dayBg {
+    background: #fff !important;
+    color: #000 !important;
+}
+.dayLeftBg{
+    background-color: #72b626;
+}
+.dayFontColor *{
+    color: #000 !important;
+}
+.dayMenu{
+    background: #eeeeee !important;
+    color: #000 !important;
+}
+.dayMenu:hover {
+    background: #72b626 !important;
+    cursor: pointer;
+}
+.dayMenu:before{
+    background: #72b626 !important;
+}
+
+.dayBtns {
+    background: #72b626 !important;
+    box-shadow: inset 0 0 1.6em -0.6em #72b626 !important;
+
+}
+.dayBtns .icon {
+    box-shadow: inset 0 0 1.6em -0.6em #72b626 !important;
+}
+.dayAbout h1{
+    color: #606161 !important;
+
+}
+.dayAbout h1::before{
+    color: #eff0f0 !important;
+}
+.dayAbout span {
+    color :#72b626 !important;
+}
+
+.dayAbout .container{
+    color: #000 !important;
+}
+.dayBox h2{
+    color: #72b626 !important;
+}
+.dayProgress{
+    background: #72b626 !important;
+}
+.dayProgress::after{
+    background: #72b626 !important;
+    color: #fff;
+}
+.dayProgress::before{
+    border-top: 6px solid #72b626 !important;
+}
+.dayEdu * {
+    color: #000 !important;
+}
+.dayEduBg {
+    background: #72b626 !important;
+    color: #fff !important;
+}
+.dayEduBg i {
+    color: #fff !important;
+
+}

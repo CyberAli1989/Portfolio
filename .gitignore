@@ -592,3 +592,6 @@ node_modules/jquery/src/var/rnothtmlwhite.js
 node_modules/jquery/src/var/slice.js
 node_modules/jquery/src/var/support.js
 node_modules/jquery/src/var/toString.js
+node_modules/.bin/extract-zip
+node_modules/.bin/ngrok
+node_modules/.bin/uuid

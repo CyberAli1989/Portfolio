@@ -238,7 +238,7 @@ header {
 #nav ul li .bxs-sun {
     display: none;
     line-height: 50px;
-    color: #dbe408;
+    /* color: #dbe408; */
 }
 
 #nav ul li .bx {
@@ -376,6 +376,7 @@ header {
 #About {
     min-height: 100vh;
     z-index: 1;
+    margin-top: 60px;
 }
 
 #About h1 {

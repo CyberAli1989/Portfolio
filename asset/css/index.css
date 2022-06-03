@@ -86,11 +86,10 @@ header {
 
 #headDesc .title {
     height: 70px;
+    width: 100%;
+
 }
 
-#headDesc .title h2 {
-    color: #ffb400;
-}
 
 #headDesc .title h2 {
     font-size: 3em;

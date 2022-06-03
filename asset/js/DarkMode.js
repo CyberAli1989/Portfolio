@@ -3,10 +3,6 @@ $(function () {
     var isNight = true;
 
 
-
-
-
-
     $('#nav ul li:first-child').click(function (e) {
         e.preventDefault();
         if (!isNight) {
@@ -31,6 +27,9 @@ $(function () {
             $('#About .edContent ').removeClass('dayEdu')
             $('#About .edContent .icons').removeClass('dayEduBg')
             $('#About .edContent .date').removeClass('dayEduBg')
+            $('#headDesc .title h2').removeAttr('data-colors', '#72b626');
+            $('#headDesc .title h2').removeClass('dayTyper');
+
             isNight = true;
 
 
@@ -56,7 +55,10 @@ $(function () {
             $('#About .edContent ').addClass('dayEdu')
             $('#About .edContent .icons').addClass('dayEduBg')
             $('#About .edContent .date').addClass('dayEduBg')
-
+            // typer color 
+            $('#headDesc .title h2').attr('data-colors', '#72b626');
+            $('#headDesc .title h2').attr('data-colors', '#72b626');
+            $('#headDesc .title h2').addClass('dayTyper');
 
 
             isNight = false;

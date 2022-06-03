@@ -595,3 +595,4 @@ node_modules/jquery/src/var/toString.js
 node_modules/.bin/extract-zip
 node_modules/.bin/ngrok
 node_modules/.bin/uuid
+node_modules/typer-dot-js/typer.js

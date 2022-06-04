@@ -202,9 +202,9 @@ header {
 #nav {
     position: fixed;
     right: 10px;
+    z-index: 100 ;
     top: 0;
     bottom: 0;
-    z-index: 100;
 }
 
 #nav ul {
@@ -212,9 +212,11 @@ header {
     list-style: none;
     display: grid;
     grid-template-rows: 150px 70px 70px 70px 70px 70px;
+    position: relative;
 }
 
 #nav ul li {
+
     line-height: 50px;
     color: #fff;
     width: 50px;
@@ -552,22 +554,26 @@ header {
     max-width: 80%;
     margin: 0 auto;
 }
-#experience{
+
+#experience {
     height: 450px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-#edu{
+
+#edu {
     font-size: 1.2em;
     color: #363636;
     margin: 15px 30px;
     /* color: #fff; */
 }
-.edContent{
+
+.edContent {
     width: 100%;
     height: fit-content;
 }
+
 .edContent .icons {
     width: 35px;
     float: left;
@@ -580,6 +586,7 @@ header {
     color: #fff;
     margin: 10px;
 }
+
 .edContent .icons::before {
     content: '';
     position: absolute;
@@ -591,10 +598,12 @@ header {
     /* right: 0; */
     left: 16px;
 }
+
 .edContent .content {
     float: right;
     width: 480px;
 }
+
 .edContent .content .date {
     font-size: 8px;
     background-color: #212121;
@@ -605,18 +614,173 @@ header {
     font-weight: 200;
     margin: 10px 0;
 }
+
 .edContent .content .title {
     font-size: 14px;
     font-weight: 200;
     margin: 8px 0;
 }
-.edContent .content .title span{
+
+.edContent .content .title span {
     color: #bebebe;
 }
-.edContent .content .text{
+
+.edContent .content .text {
     font-size: 12px;
     color: #bebebe;
 }
+
+/* Portfolio section */
+#Portfolio h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    color: #ffff;
+    height: 20px;
+    position: relative;
+    height: 100px;
+    top: 30px;
+    margin: 30px;
+}
+
+#Portfolio h1:before {
+    text-align: center;
+    content: 'My Portfolio';
+    color: #444;
+    letter-spacing: 5px;
+    position: absolute;
+    z-index: -1;
+    font-size: 1.5em;
+    left: 0;
+    right: 0;
+    top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+#Portfolio h1 span {
+    color: #ffb400;
+}
+
+.wrap {
+    max-width: 100%;
+    margin:0 auto;
+    position: relative;
+    z-index: 0;
+}
+#Portfolio{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Portfolio button.btn {
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 12px 22px;
+}
+
+#Portfolio button.btn.btn-primary {
+    background: #ffb400;
+    border-color: #ffb400;
+    color: white;
+}
+
+#Portfolio button.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+#Portfolio button.btn.btn-dark {
+    background: #ffb400;
+    border-color: #ffb400;
+    color: white;
+}
+
+#Portfolio button.btn.btn-dark:hover {
+    opacity: 0.7;
+}
+
+#Portfolio button.btn:hover {
+    cursor: pointer;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter .btn {
+    color: white;
+    font-weight: bold;
+    margin: 0.5rem;
+    background: transparent;
+    border-color: white;
+}
+
+.filter .btn:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.filter .btn.current {
+    color: #ffb400;
+    background: white;
+    border-color: white;
+}
+
+.filter .btn.current:hover {
+    opacity: 1;
+}
+
+.items {
+    color: #000c1d;
+    /* margin: 4rem 4rem; */
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.items .img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 150px;
+    background: #ccc;
+}
+
+.items .title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffb400;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    transition: 360ms;
+    opacity: 0;
+    text-align: center;
+    line-height: 150px;
+}
+.item:hover .title{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.items .item {
+    margin: 0.5rem auto !important;
+    width: 90% !important;
+    width: 230px;
+    height: 150px;
+    background: white;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* BP at 1400px  */
 @media (max-width:1400px) {
     #About .container .boxs {
         width: 600px;
@@ -624,12 +788,28 @@ header {
 
     }
 }
+.filter{
+    z-index: 300;
+    position: relative;
+}
 
-/* beak at 1100px */
+/* BP at 1100px */
 
 @media (max-width: 1100px) {
 
-
+   .items{
+       grid-template-columns: repeat(1,1fr);
+       margin: 0 auto;
+       text-align: center;
+       width: 100%;
+   }
+   .item {
+    height: 150px;
+    background: white;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 1rem;
+}
 
     .leftBg {
         display: none !important;
@@ -703,7 +883,11 @@ header {
     #nav {
         position: fixed;
         left: 0;
-        right: 0;
+        /* right: 0; */
+        width: 0;
+        z-index: 10;
+        bottom: 0;
+        
     }
 
     #nav ul {
@@ -716,6 +900,7 @@ header {
         list-style: none;
         text-align: center;
         width: 100%;
+        z-index: 250;
         background: #2b2a2a;
         height: fit-content;
     }
@@ -769,10 +954,12 @@ header {
     #About .container .info {
         margin: 10px;
     }
+
     #About .container ul li span {
         display: block;
         text-align-last: left;
     }
+
     #About .container .info h2 {
         margin-bottom: 20px;
         color: #363636;
@@ -804,62 +991,87 @@ header {
         height: 120px;
         margin: 5px auto;
     }
-    #About .btns button{
-        font-size: 1em ;
+
+    #About .btns button {
+        font-size: 1em;
     }
 
 
-/* Educations */
+    /* Educations */
 
-#experience{
-    min-height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 150px 150px 150px 150px 150px 150px;
-}
+    #experience {
+        min-height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    }
 
-.edContent .icons {
-    width: 35px;
-    /* float: left; */
-    clear: both;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 50%;
-    background: #ffb400;
-    position: relative;
-    color: #fff;
-    margin: 10px auto;
-    text-align: center;
-}
-.edContent .icons::before {
-    display: none;
-}
-.edContent .content {
-    width: 250px;
-    margin: 10px 0;
-}
-.edContent .content .date {
-    font-size: 8px;
-    background-color: #212121;
-    color: #fff;
-    width: fit-content;
-    padding: 4px;
-    border-radius: 20px;
-    font-weight: 200;
-    margin: 10px 0;
-}
-.edContent .content .title {
-    font-size: 14px;
-    font-weight: 200;
-    margin: 8px 0;
-}
-.edContent .content .title span{
-    color: #bebebe;
-}
-.edContent .content .text{
-    font-size: 12px;
-    color: #bebebe;
-}
+    .edContent .icons {
+        width: 35px;
+        /* float: left; */
+        clear: both;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 50%;
+        background: #ffb400;
+        position: relative;
+        color: #fff;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .edContent .icons::before {
+        display: none;
+    }
+
+    .edContent .content {
+        width: 250px;
+        margin: 10px 0;
+    }
+
+    .edContent .content .date {
+        font-size: 8px;
+        background-color: #212121;
+        color: #fff;
+        width: fit-content;
+        padding: 4px;
+        border-radius: 20px;
+        font-weight: 200;
+        margin: 10px 0;
+    }
+
+    .edContent .content .title {
+        font-size: 14px;
+        font-weight: 200;
+        margin: 8px 0;
+    }
+
+    .edContent .content .title span {
+        color: #bebebe;
+    }
+
+    .edContent .content .text {
+        font-size: 12px;
+        color: #bebebe;
+    }
+    
+    /* Portfolio Section */
+
+    #Portfolio h1 {
+        margin: 5px auto;
+        text-align: center;
+        font-size: 2.5em;
+        color: #ffff;
+        height: 20px;
+        position: relative;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+
+    #Portfolio h1:before {
+        font-size: 1.25em;
+        top: -3px;
+    }
 }

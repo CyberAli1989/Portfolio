@@ -2,6 +2,7 @@ $(function() {
     // let slide = false
     let head = false
     let about = false
+    let portfolio = false
     $("#home").click(function(e) {
         console.log($('body , html').offset().top);
 
@@ -35,10 +36,30 @@ $(function() {
         $('header').slideUp('slow');
         about = true
         head = true
+        if (portfolio) {
+            $('#Contact').slideDown('slow');
+
+        }
         $('body').css('overflow', 'hidden');
         $('#Portfolio').css('display', 'initial');
         $('.leftBg').css('display', 'none');
+        $('#Contact').css('display', 'none');
         // $('#About').css('display', 'none')
+    });
+    $("#contact").click(function (e) { 
+        e.preventDefault();
+        $('#About').slideUp('slow');
+        $('header').slideUp('slow');
+        $('#Portfolio').slideUp('slow');
+        about = true
+        head = true
+        portfolio = true
+        $('body').css('overflow', 'visible');
+        $('#Portfolio').css('display', 'none');
+        $('.leftBg').css('display', 'none');
+        // $('#About').css('display', 'none')
+        $('#Contact').css('display', 'initial');
+
     });
     
     $('nav ul li').click(function() {

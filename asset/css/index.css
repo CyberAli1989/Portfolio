@@ -61,8 +61,8 @@ header {
 }
 
 .headContent #headImg {
-    width: 450px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     background: #d4fbf6;
     border-radius: 20px;
     overflow: hidden;
@@ -202,7 +202,7 @@ header {
 #nav {
     position: fixed;
     right: 10px;
-    z-index: 100 ;
+    z-index: 100;
     top: 0;
     bottom: 0;
 }
@@ -664,11 +664,12 @@ header {
 
 .wrap {
     max-width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
     z-index: 0;
 }
-#Portfolio{
+
+#Portfolio {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -738,7 +739,7 @@ header {
     display: grid;
     width: 60%;
     margin: 0 auto;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .items .img {
@@ -763,7 +764,8 @@ header {
     text-align: center;
     line-height: 150px;
 }
-.item:hover .title{
+
+.item:hover .title {
     height: 100%;
     opacity: 1;
     visibility: visible;
@@ -780,6 +782,158 @@ header {
     margin-bottom: 1rem;
 }
 
+/* Contact Section */
+#Contact h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    color: #ffff;
+    height: 20px;
+    position: relative;
+    height: 100px;
+    top: 30px;
+    margin: 30px;
+}
+
+#Contact h1:before {
+    text-align: center;
+    content: 'Contact';
+    color: #444;
+    letter-spacing: 5px;
+    position: absolute;
+    z-index: -1;
+    font-size: 1.5em;
+    left: 0;
+    right: 0;
+    top: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+#Contact {
+    min-height: 100vh;
+}
+
+#Contact h1 span {
+    color: #ffb400;
+}
+
+#Contact .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Contact .container .CInfo {
+    width: 25%;
+    color: #fff;
+    margin: 0 25px;
+    padding: 5px;
+}
+
+#Contact .container .CInfo .social {
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+}
+
+#Contact .container .CInfo .social i {
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    height: 40px;
+    border-radius: 50%;
+    background: #252525;
+}
+
+#Contact .container .CInfo .social i:hover {
+    background: #ffb400;
+    cursor: pointer;
+}
+
+#Contact .container .CInfo h2 {
+    margin-bottom: 20px;
+}
+
+#Contact .container .CInfo h3 {
+    margin: 10px 0;
+}
+
+#Contact .container .CInfo p {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+#Contact .container .CInfo .address {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#Contact .container .CInfo .icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 3em;
+    color: #ffb400;
+}
+
+#Contact .container .CInfo h3 {
+    width: 100%;
+    color: #4f4f4f;
+}
+
+#Contact .container .CFrom {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#Contact .container .CFrom form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Contact .container .CFrom form input {
+    width: 350px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #252525;
+    color: #fff;
+}
+
+#Contact .container .CFrom form input:focus {
+    border: 1px solid #ffb400;
+    outline: none;
+}
+
+#Contact .container .CFrom form textarea:focus {
+    border: 1px solid #ffb400;
+    outline: none;
+}
+
+#Contact .container .CFrom form textarea {
+    width: 100%;
+    height: 18em;
+    padding: 20px;
+    resize: none;
+    border-radius: 20px;
+    border: none;
+    background-color: #252525;
+    margin-bottom: 30px;
+}
+
+#Contact .container .CFrom input.subject {
+    width: 100%;
+}
+
 /* BP at 1400px  */
 @media (max-width:1400px) {
     #About .container .boxs {
@@ -788,7 +942,8 @@ header {
 
     }
 }
-.filter{
+
+.filter {
     z-index: 300;
     position: relative;
 }
@@ -797,19 +952,20 @@ header {
 
 @media (max-width: 1100px) {
 
-   .items{
-       grid-template-columns: repeat(1,1fr);
-       margin: 0 auto;
-       text-align: center;
-       width: 100%;
-   }
-   .item {
-    height: 150px;
-    background: white;
-    border-radius: 7px;
-    position: relative;
-    margin-bottom: 1rem;
-}
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .item {
+        height: 150px;
+        background: white;
+        border-radius: 7px;
+        position: relative;
+        margin-bottom: 1rem;
+    }
 
     .leftBg {
         display: none !important;
@@ -887,7 +1043,7 @@ header {
         width: 0;
         z-index: 10;
         bottom: 0;
-        
+
     }
 
     #nav ul {
@@ -1056,7 +1212,7 @@ header {
         font-size: 12px;
         color: #bebebe;
     }
-    
+
     /* Portfolio Section */
 
     #Portfolio h1 {
@@ -1074,4 +1230,53 @@ header {
         font-size: 1.25em;
         top: -3px;
     }
+
+
+    /* Contact Section */
+    #Contact h1 {
+        font-size: 2.5em;
+
+    }
+
+    #Contact h1:before {
+        font-size: 1.5em;
+    }
+
+    #Contact h1 span {
+        font-size: .75em;
+    }
+
+    #Contact .container {
+        height: fit-content;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    #Contact .container .CInfo {
+        width: 100%;
+        height: fit-content;
+        color: #fff;
+        margin: 0 25px;
+        padding: 5px;
+    }
+
+    #Contact .container .CFrom {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #Contact .container .CFrom form {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #Contact .container .CFrom form input {
+        width: 100%;
+    }
+
 }

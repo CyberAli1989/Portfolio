@@ -2,7 +2,9 @@ $(function() {
     // let slide = false
     let head = false
     let about = false
-    let portfolio = false
+    let portfolio = false;
+    let contact = false;
+
     $("#home").click(function(e) {
         console.log($('body , html').offset().top);
 
@@ -44,7 +46,8 @@ $(function() {
         $('#Portfolio').css('display', 'initial');
         $('.leftBg').css('display', 'none');
         $('#Contact').css('display', 'none');
-        // $('#About').css('display', 'none')
+        $('#Blog').css('display', 'none');
+        $('#About').css('display', 'none')
     });
     $("#contact").click(function (e) { 
         e.preventDefault();
@@ -59,9 +62,34 @@ $(function() {
         $('.leftBg').css('display', 'none');
         // $('#About').css('display', 'none')
         $('#Contact').css('display', 'initial');
+        $('#Blog').css('display', 'none');
+
 
     });
+    $("#blog").click(function (e) { 
+        e.preventDefault();
+        $('#About').slideUp('slow');
+        $('header').slideUp('slow');
+        $('#Portfolio').slideUp('slow');
+        $('#Contact').slideUp('slow');
+        about = true
+        head = true
+        portfolio = true
+        contact = true
     
+    
+        $('body').css('overflow', 'visible');
+        $('#Portfolio').css('display', 'none');
+        $('#Contact').css('display', 'none');
+        $('.leftBg').css('display', 'none');
+        // $('#About').css('display', 'none')
+        $('#About').css('display', 'none');
+        $('#Contact').css('display', 'none');
+        $('#Blog').css('display', 'initial');
+    
+    
+    });
+
     $('nav ul li').click(function() {
         $(this).addClass('active')
         $(this).siblings().removeClass('active')
